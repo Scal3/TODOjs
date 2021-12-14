@@ -1,0 +1,6 @@
+.main__form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+}

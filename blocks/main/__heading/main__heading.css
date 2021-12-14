@@ -1,0 +1,17 @@
+.main__heading {
+    margin: 25px 0 50px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 500;
+    color: gray;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .main__heading {
+        font-size: 35px;
+        line-height: 30px;
+    }
+}

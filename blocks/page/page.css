@@ -1,0 +1,7 @@
+.page {
+    background-color: rgb(255, 228, 228);
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,8 @@
+.header__logo {
+    margin: 0;
+    display: block;
+    padding: 1px;
+    background-color: inherit;
+    border: 1px solid gray;
+    color: gray;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>TODOjs</title>
+    <script src="./scripts/index.js" defer></script>
+</head>
+<body class="page">
+    <header class="header block-margin block-padding block-width">
+        <p class="header__logo font-size">TODO list</p>
+    </header>
+    <main class="main block-margin block-padding block-width">
+        <h1 class="main__heading">TODO</h1>
+        <form class="main__form">
+            <input class="main__form-input font-size" placeholder="Write a task"/>
+            <button class="main__form-button font-size">ADD</button>
+        </form>
+        <div class="main__todo-container">
+
+        </div>
+    </main>
+    <footer class="footer block-width block-margin block-padding">
+        <p class="footer__title">&copy; 2021 Created by</p>
+    </footer>
+    <template id="one">
+        <div class="task">
+            <p class="task__title"></p>
+            <div class="task__buttons-container">
+                <button class="task__button"></button>
+                <button class="task__button"></button>
+                <button class="task__button"></button>
+            </div>
+        </div>
+    </template>
+</body>
+</html>

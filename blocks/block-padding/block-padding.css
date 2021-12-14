@@ -1,0 +1,17 @@
+.block-padding {
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .block-padding {
+        padding: 15px 30px 15px 30px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .block-padding {
+        padding: 15px 50px 15px 50px;
+    }
+}
