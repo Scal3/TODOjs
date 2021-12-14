@@ -1,0 +1,27 @@
+.task__button {
+    background-image: url(../../images/closeBtn.svg);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    border: 1px solid red;
+    border: none;
+    background-color: inherit;
+}
+
+.task__button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .task__button {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .task__button {
+        height: 35px;
+        width: 35px;
+    }
+}

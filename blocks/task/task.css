@@ -1,0 +1,28 @@
+.task {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.task:last-of-type {
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .task {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .task {
+        padding: 15px;
+    }
+}
