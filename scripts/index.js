@@ -10,8 +10,13 @@ const handleTaskSubmit = () => {
     const task = taskTemplate.querySelector('.task').cloneNode(true)
     task.querySelector('.task__title').textContent = taskInput.value
     taskContainer.append(task)
+    disabledSubmit(taskAddButton)
 }
 
+//  Функция дизэйбла любой кнопки
+const disabledSubmit = (button) => {
+    button.setAttribute('disabled', true)
+}
 
 //  Слушатель на кнопку удаления
 window.addEventListener('click', (event) => {
@@ -26,3 +31,19 @@ taskForm.addEventListener('submit', (event) => {
     handleTaskSubmit()
     taskForm.reset()
 })
+
+//  Слушатель на инпут для дизэйбла сабмита
+window.addEventListener('keyup', (event) => {
+    if(event.target.classList.contains('main__form-input')) {
+        if(event.target.value.length <= 0) {
+            const submit = event.target.closest('.main__form').querySelector('.main__form-button')
+            submit.setAttribute('disabled', true)
+        }   else {
+            const submit = event.target.closest('.main__form').querySelector('.main__form-button')
+            submit.removeAttribute('disabled', true)
+        }
+    }
+})
+
+//  Слушатель на документ. При загрузке контента отключаем кнопку
+document.addEventListener("DOMContentLoaded", disabledSubmit(taskAddButton))
