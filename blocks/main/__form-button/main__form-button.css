@@ -2,10 +2,16 @@
     background-color: inherit;
     border: 1px solid gray;
     color: gray;
+    cursor: pointer;
 }
 
 .main__form-button:hover {
-    cursor: pointer;
     color: rgba(128, 128, 128, 0.514);
     border: 1px solid rgba(128, 128, 128, 0.514);
+}
+
+.main__form-button_disabled {
+    cursor: default;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    color: rgba(128, 128, 128, 0.5);
 }

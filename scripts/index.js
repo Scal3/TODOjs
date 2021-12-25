@@ -17,11 +17,13 @@ const handleTaskSubmit = () => {
 //  Функция дизэйбла кнопки
 const disabledButton = (button) => {
     button.setAttribute('disabled', true)
+    button.classList.add('main__form-button_disabled')
 }
 
 //  Функция включения кнопки
 const enabledButton = (button) => {
     button.removeAttribute('disabled', true)
+    button.classList.remove('main__form-button_disabled')
 }
 
 //  Оботчик кнопки удаления задачи
