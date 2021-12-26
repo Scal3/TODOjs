@@ -1,3 +1,5 @@
+import '../styles/index.css';
+
 const taskContainer = document.querySelector('.main__todo-container')
 const taskTemplate = document.querySelector('#one').content
 const taskForm  = document.forms.taskForm
